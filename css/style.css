@@ -1,0 +1,90 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #AFCBFF;
+    color: #0E1C36;
+}
+
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-form .user-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-form .user-input label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.input-form .user-input input[type="number"]{
+    width: 250px;
+    /* height: 30px; */
+    padding: 10px 20px;
+    font-size: 15px;
+    background: #F9FBF2;    
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 0.03rem solid gray;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.input-form button{
+    cursor: pointer;
+    background: #0E1C36;
+    color: #F9FBF2;
+    padding: 3px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: all 200ms ease-in-out;
+}
+.input-form button:hover{
+    background: #ffb703;
+    color: #0E1C36;
+}
+
+.display{
+    text-align: center;
+}
+.display .total {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 23px;
+}
+.display table {
+    text-align: start;
+    margin-top: 20px;
+    width: 100%;
+    border: 0.02rem solid #000;
+    border-radius: 5px;
+    padding: 20px;
+}
+.display table th {
+    margin-bottom: 10px;
+    border-bottom: 0.2rem solid #000;
+
+}
+.display table, th, tr, td {
+    background: #ebf2fa;
+}
+.amount{
+    font-weight: 600;
+}
+
+#change-due {
+    display: none;
+}
