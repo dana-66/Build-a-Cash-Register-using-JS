@@ -161,8 +161,17 @@ const formatResults = (status, change) => {
   );
   return;
 };
+// const formatResults = (status, change) => {
+//   displayChangeDue.innerHTML = `<p>Status: ${status}</p>`;
+//   let changeTable = '<table><thead><tr><th>Denomination</th><th>Amount</th></tr></thead><tbody>';
+//   change.forEach(money => {
+//       changeTable += `<tr><td>${money[0]}</td><td>$${money[1]}</td></tr>`;
+//   });
+//   changeTable += '</tbody></table>';
+//   displayChangeDue.innerHTML += changeTable;
+// };
 
-const checkValid = () => {
+const checkCashRegister = () => {
   if (Number(cash.value) < price) {
     alert('Customer does not have enough money to purchase the item');
     cash.value = '';
@@ -175,9 +184,6 @@ const checkValid = () => {
     cash.value = '';
     return;
   }
-}
-const checkCashRegister = () => {
-  checkValid();
   let changeDue = Number(cash.value) - price;
   let reversedCid = [...cid].reverse();
   let denominations = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01];

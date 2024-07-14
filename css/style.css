@@ -26,7 +26,7 @@
 .input-form .user-input label{
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .input-form .user-input input[type="number"]{
     width: 250px;
@@ -61,17 +61,17 @@
     text-align: center;
 }
 .display .total {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 700;
     font-size: 23px;
 }
 .display table {
     text-align: start;
     margin-top: 20px;
-    width: 100%;
+    width: 320px;
     border: 0.02rem solid #000;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px 20px;
 }
 .display table th {
     margin-bottom: 10px;
@@ -79,6 +79,13 @@
 
 }
 .display table, th, tr, td {
+    background: #ebf2fa;
+}
+.display table p{
+    background: #ebf2fa;
+    line-height: 0.5rem;
+}
+.display table p >strong{
     background: #ebf2fa;
 }
 .amount{
